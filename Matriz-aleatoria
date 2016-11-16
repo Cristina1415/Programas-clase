@@ -1,5 +1,5 @@
 #include<iostream>
-#include<stdlib>
+#include<stdlib.h>
 int main(){
   int matrix [3][3];
   int fil;
