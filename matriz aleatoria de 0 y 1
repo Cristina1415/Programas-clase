@@ -1,0 +1,18 @@
+#include<iostream>
+#include<stdlib.h>
+#include<time.h> // esta fuente sirve para que añadamos las funciones del tiempo y como el tiempo va cambiando usar ese numero como numero aleatorio porque claro, el ordenador solito no crea numeros aleatorios.
+int main(){
+    int cont;
+    int fil, col;
+    int num;
+    srand(time(0));
+    int matrix[3][3];
+    for(fil=0;fil<3;fil++){
+                           for(col=0;col<3;col++){
+                                                  matrix[fil][col]=rand()%2;
+                                                  std::cout<<matrix[fil][col] << '\n';
+                                                  }
+                           }
+   std::cin>>num;
+   return 0;
+}
