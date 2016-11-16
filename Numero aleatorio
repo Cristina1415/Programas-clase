@@ -1,0 +1,18 @@
+
+#include<iostream>
+#include<stdlib.h>
+#include<time.h> // esta fuente sirve para que añadamos las funciones del tiempo y como el tiempo va cambiando usar ese numero como numero aleatorio porque claro, el ordenador solito no crea numeros aleatorios.
+int main(){
+    int cont;
+    int semilla;
+    semilla=time(0);
+    srand(semilla);//IMPORTANTE
+    int num;
+    int x;
+    for(cont=0;cont<10;cont++){
+                               num=rand()%10+1;//con esto lo que hacemos es que se asigne numeros aleatorios del 1 al 10, con el+1 lo que hacemos es quitar el 0
+                               std::cout<<num << '\n';
+    }
+    std::cin>>x;
+    return 0;
+}
